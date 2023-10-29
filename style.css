@@ -1,0 +1,128 @@
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50%;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  *{
+      margin: 0px;
+      padding: 0px;
+  }
+  .body{
+      width: 600px;
+      height: 900px;
+      border: 2px solid black;
+      background-color: #222;
+      margin: auto;
+      border-radius: 10px;
+  }
+  input{
+      margin: 15px;
+      width: 95%;
+      height: 150px;
+      font-size: xx-large;
+  }
+  
+  
+  
+  
+  .section1{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    
+  }
+  .section2{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+  }
+  .section3{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+  }
+  .section4{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+  }
+  .section5{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+  }
+  div .button-85{
+      font-size: x-large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
